@@ -16,13 +16,14 @@ const getTheme = (mode: 'light' | 'dark'): CreateThemeOptions => {
             lg: 24,
             xl: 32,
         },
-        mode: 'light',
+        mode: 'dark',
         components: {
             Text(props, theme) {
                 return {
                     style: {
                         fontSize: 16,
-                        color: theme.colors.white,
+                        color: theme.colors.black,
+                        fontWeight: '700',
                     },
                 }
             },

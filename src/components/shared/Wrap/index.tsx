@@ -10,8 +10,8 @@ interface WrapProps {
 const Wrap: React.FC<WrapProps> = (props) => {
     return (
         <React.Fragment>
-            <StatusBar backgroundColor="black" style="light" />
-            <SafeAreaView>{props.children}</SafeAreaView>
+            <StatusBar backgroundColor="transparent" />
+            <SafeAreaView style={{ flex: 1 }}>{props.children}</SafeAreaView>
         </React.Fragment>
     )
 }

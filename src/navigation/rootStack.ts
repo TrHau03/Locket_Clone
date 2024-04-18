@@ -1,10 +1,5 @@
 import { InitScreen, MessageScreen, ProfileScreen } from '../screen'
-
-export enum RootStackParamsEnum {
-    ProfileScreen = 'ProfileScreen',
-    MessageScreen = 'MessageScreen',
-    InitScreen = 'InitScreen',
-}
+import { RootStackParamsEnum } from './type'
 
 export type RootStackParamsList = {
     ProfileScreen: undefined
