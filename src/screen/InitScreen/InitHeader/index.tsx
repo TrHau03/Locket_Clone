@@ -1,4 +1,4 @@
-import { Pressable, View } from 'react-native'
+import { Pressable, StyleProp, View, ViewStyle } from 'react-native'
 import React from 'react'
 import useStyles from './styles'
 import BaseIcons from '@/components/base/Icon'
@@ -8,6 +8,7 @@ import { RootStackParamsEnum } from '@/navigation/type'
 
 interface InitHeaderProps {
     count: number
+    style?: StyleProp<ViewStyle>
 }
 
 const InitHeader: React.FC<InitHeaderProps> = (props) => {
@@ -16,7 +17,7 @@ const InitHeader: React.FC<InitHeaderProps> = (props) => {
     const { navigateToPage } = useNavigationService()
 
     return (
-        <View style={styles.containerHeader}>
+        <View style={[styles.containerHeader, props.style]}>
             <Pressable
                 onPress={() => {
                     navigateToPage(RootStackParamsEnum.ProfileScreen)

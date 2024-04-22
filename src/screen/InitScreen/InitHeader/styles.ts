@@ -6,6 +6,7 @@ const useStyles = makeStyles(({ colors, spacing }) => {
             flexDirection: 'row',
             justifyContent: 'space-between',
             paddingHorizontal: spacing.md,
+            backgroundColor: colors.background,
         },
         containerCenter: {
             flexDirection: 'row',

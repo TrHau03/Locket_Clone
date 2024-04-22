@@ -17,6 +17,7 @@
     "@react-navigation/native-stack": "^6.9.26",
     "@reduxjs/toolkit": "^2.2.3",
     "@rneui/themed": "^4.0.0-rc.8",
+    "@shopify/flash-list": "^1.6.4",
     "expo": "~50.0.14",
     "expo-av": "~13.10.5",
     "expo-camera": "~14.1.3",
