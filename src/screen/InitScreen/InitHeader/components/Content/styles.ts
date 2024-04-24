@@ -3,10 +3,6 @@ import { makeStyles } from '@rneui/themed'
 
 const useStyles = makeStyles(({ colors, spacing }) => {
     return {
-        container: {
-            flex: 1,
-            backgroundColor: colors.background,
-        },
         containerContent: {
             width: Device.getWidthDevice(),
             height: Device.getWidthDevice(),
@@ -18,7 +14,6 @@ const useStyles = makeStyles(({ colors, spacing }) => {
             justifyContent: 'space-between',
             alignItems: 'center',
             paddingHorizontal: spacing.lg,
-            marginTop: spacing.lg * 2,
         },
         btnTakePicture: {
             borderWidth: 3,
@@ -32,6 +27,13 @@ const useStyles = makeStyles(({ colors, spacing }) => {
             alignItems: 'center',
             gap: spacing.md,
             marginTop: spacing.lg * 2,
+        },
+        itemContent: {
+            flexDirection: 'row',
+            justifyContent: 'center',
+            alignItems: 'center',
+            marginTop: 20,
+            gap: 10,
         },
     }
 })

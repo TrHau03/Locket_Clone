@@ -1,4 +1,4 @@
-import { View, Text } from 'react-native'
+import { View, Text, ViewStyle, StyleProp } from 'react-native'
 import React from 'react'
 import {
     MaterialIcons,
@@ -28,6 +28,7 @@ interface BaseIconsProps {
         | 'Foundation'
         | 'FontAwesome5'
     color?: string
+    style?: StyleProp<ViewStyle>
 }
 
 const BaseIcons: React.FC<BaseIconsProps> = (props) => {
@@ -67,7 +68,11 @@ const BaseIcons: React.FC<BaseIconsProps> = (props) => {
             IconComponent = Ionicons
             break
     }
-    return <IconComponent name={props.name} size={props.size ?? 34} color={props.color} />
+    return (
+        <View style={props.style}>
+            <IconComponent name={props.name} size={props.size ?? 34} color={props.color} />
+        </View>
+    )
 }
 
 export default BaseIcons

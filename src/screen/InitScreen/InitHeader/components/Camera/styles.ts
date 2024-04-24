@@ -3,10 +3,6 @@ import { makeStyles } from '@rneui/themed'
 
 const useStyles = makeStyles(({ colors, spacing }) => {
     return {
-        container: {
-            flex: 1,
-            backgroundColor: colors.background,
-        },
         containerContent: {
             width: Device.getWidthDevice(),
             height: Device.getWidthDevice(),
