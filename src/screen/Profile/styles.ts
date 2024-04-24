@@ -1,8 +1,13 @@
 import { makeStyles } from '@rneui/themed'
 import Device from '@/utils/device'
 
-const useStyles = makeStyles(({ colors, spacing }) => {
+const useStyles = makeStyles(({ colors }) => {
     return {
+        boxBtn: {
+            borderRadius: 20,
+            backgroundColor: colors.grey3,
+            marginTop: 10,
+        },
         btnChildLeft: {
             flexDirection: 'row',
             gap: 10,
@@ -10,10 +15,15 @@ const useStyles = makeStyles(({ colors, spacing }) => {
         btnChild: {
             flexDirection: 'row',
             justifyContent: 'space-between',
-            backgroundColor: colors.grey3,
             paddingHorizontal: '4%',
             paddingVertical: '4%',
-            borderRadius: 10,
+            borderTopWidth: 1.5,
+            borderColor: colors.grey4,
+        },
+        txtError: {
+            color: colors.error,
+            fontSize: 16,
+            fontWeight: '600',
         },
         txtContent: {
             color: colors.black,
@@ -31,6 +41,7 @@ const useStyles = makeStyles(({ colors, spacing }) => {
             flexDirection: 'row',
             gap: 10,
             alignItems: 'center',
+            marginTop: '7%',
         },
         txtUpdateI4: {
             fontSize: 18,
@@ -89,6 +100,7 @@ const useStyles = makeStyles(({ colors, spacing }) => {
             width: Device.getWidthDevice(),
             height: '100%',
             backgroundColor: colors.grey5,
+            marginBottom: '10%',
         },
         bodyHeader: {
             backgroundColor: colors.grey5,
