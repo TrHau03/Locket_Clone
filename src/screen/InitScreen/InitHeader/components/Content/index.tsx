@@ -34,6 +34,7 @@ const Content = () => {
                     renderItem={renderItem}
                     snapToInterval={Device.getHeightDevice() / 1.8}
                     scrollEventThrottle={1}
+                    nestedScrollEnabled
                     disableIntervalMomentum={true}
                 />
             </View>

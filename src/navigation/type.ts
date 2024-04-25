@@ -6,4 +6,5 @@ export enum RootStackParamsEnum {
     ProfileScreen = 'ProfileScreen',
     MessageScreen = 'MessageScreen',
     InitScreen = 'InitScreen',
+    MessageDetailScreen = 'MessageDetailScreen',
 }

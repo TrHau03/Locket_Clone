@@ -21,7 +21,7 @@ const InitScreen: React.FC = () => {
                 showsVerticalScrollIndicator={false}
                 snapToAlignment="start"
                 snapToInterval={Device.getHeightDevice() * 0.9}
-                scrollEnabled={false}
+                scrollEnabled={true}
             >
                 <Camera />
                 <Content />

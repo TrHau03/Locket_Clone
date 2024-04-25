@@ -1,6 +1,4 @@
-import { NativeStackNavigationProp } from '@react-navigation/native-stack'
-import { createRef } from 'react'
-import { NavigationContainerRef, useNavigation } from '@react-navigation/native'
+import { useNavigation } from '@react-navigation/native'
 import { NavigationType, RootStackParamsEnum } from './type'
 
 export const useNavigationService = () => {
@@ -8,6 +6,9 @@ export const useNavigationService = () => {
     const navigateToPage = (name: RootStackParamsEnum, params?: any) => {
         return navigation.navigate(name, params)
     }
+    const navigateGoBack = () => {
+        return navigation.canGoBack() && navigation.goBack()
+    }
 
-    return { navigateToPage }
+    return { navigateToPage, navigateGoBack }
 }
